@@ -49,7 +49,7 @@ class Account extends ActiveRecord
     /** @inheritdoc */
     public static function tableName()
     {
-        return '{{%social_account}}';
+        return self::getModule()->table_account;
     }
 
     /**
