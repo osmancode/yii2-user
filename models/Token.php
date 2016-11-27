@@ -105,7 +105,7 @@ class Token extends ActiveRecord
     /** @inheritdoc */
     public static function tableName()
     {
-        return '{{%token}}';
+        return self::getModule()->table_token;
     }
 
     /** @inheritdoc */
