@@ -98,4 +98,17 @@ class Module extends BaseModule
         'recover/<id:\d+>/<code:[A-Za-z0-9_-]+>' => 'recovery/reset',
         'settings/<action:\w+>'                  => 'settings/<action>'
     ];
+    
+    
+        /** @var string User Table */
+    public $table_user = '{{%user}}';
+
+    /** @var string Social Account Table */
+    public $table_account = '{{%social_account}}';
+
+    /** @var string Profile Table */
+    public $table_profile = '{{%profile}}';
+
+    /** @var string Token Table */
+    public $table_token = '{{%token}}';
 }
